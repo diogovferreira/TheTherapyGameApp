@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<weather>
+    <location
+        city ="london"
+        temperature = "120"
+        weather= "Rain"/>
+</weather>

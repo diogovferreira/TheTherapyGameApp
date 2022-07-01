@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.diogo.myapp.UserAreaActivity">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp">
+
+        <TextView
+            android:id="@+id/tvSessions"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ibSessions"
+            android:layout_alignLeft="@+id/ibSessions"
+            android:layout_alignStart="@+id/ibSessions"
+            android:layout_marginLeft="11dp"
+            android:layout_marginStart="11dp"
+            android:text="Sessions"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="164dp"
+            tools:layout_editor_absoluteY="314dp" />
+
+        <TextView
+            android:id="@+id/tvStats"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MyStats"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="246dp"
+            tools:layout_editor_absoluteY="170dp"
+            android:layout_above="@+id/ibMyStats"
+            android:layout_toLeftOf="@+id/ibProfile"
+            android:layout_toStartOf="@+id/ibProfile" />
+
+        <TextView
+            android:id="@+id/tvWelcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Welcome"
+            android:textSize="40sp"
+            tools:layout_editor_absoluteX="108dp"
+            tools:layout_editor_absoluteY="16dp"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/tvProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/ibProfile"
+            android:layout_centerHorizontal="true"
+            android:text="Profile"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="170dp" />
+
+        <EditText
+            android:id="@+id/etUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="83dp"
+            tools:layout_editor_absoluteY="74dp"
+            android:layout_marginTop="16dp"
+            android:layout_below="@+id/tvWelcome"
+            android:layout_centerHorizontal="true" />
+
+        <ImageButton
+            android:id="@+id/ibMyStats"
+            android:layout_width="74dp"
+            android:layout_height="79dp"
+            android:background="@android:color/background_light"
+            android:backgroundTint="@android:color/background_light"
+            android:cropToPadding="true"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/stats_button"
+            tools:layout_editor_absoluteX="232dp"
+            tools:layout_editor_absoluteY="187dp"
+            android:layout_marginBottom="90dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignLeft="@+id/etUser"
+            android:layout_alignStart="@+id/etUser" />
+
+        <ImageButton
+            android:id="@+id/ibSessions"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:background="@android:color/background_light"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/calendar_sessions"
+            tools:layout_editor_absoluteX="153dp"
+            tools:layout_editor_absoluteY="331dp"
+            android:layout_alignTop="@+id/ibMyStats"
+            android:layout_toRightOf="@+id/ibProfile"
+            android:layout_toEndOf="@+id/ibProfile" />
+
+        <ImageButton
+            android:id="@+id/ibProfile"
+            android:layout_width="79dp"
+            android:layout_height="79dp"
+            android:background="@android:color/background_light"
+            android:scaleType="fitCenter"
+            app:srcCompat="@drawable/profile_button"
+            tools:layout_editor_absoluteX="74dp"
+            tools:layout_editor_absoluteY="187dp"
+            android:layout_marginBottom="42dp"
+            android:layout_above="@+id/tvStats"
+            android:layout_centerHorizontal="true" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
